@@ -1,0 +1,130 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a6d81e, #dbac11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .todo-container {
+    background: white;
+    padding: 2rem; 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+  }
+  
+  .todo-container h1 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    padding: 0.5rem;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 0.5rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  .add-btn {
+    background: #4cafef;
+    color: white;
+  }
+  
+  .complete-btn {
+    background: #4caf50;
+    color: white;
+  }
+  
+  .edit-btn {
+    background: #ff9800;
+    color: white;
+  }
+  
+  .delete-btn {
+    background: #f44336;
+    color: white;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .todo-item.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  .todo-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .todo-item p {
+    flex-grow: 1;
+    margin: 0;
+  }
+  .todo-item button {
+    margin-left: 10px;
+  }
+  .todo-item button:hover {
+    opacity: 0.8;
+  }
+  .todo-item button:active {
+    transform: scale(0.95);
+  }
+  .todo-item button.complete-btn {
+    background-color: #4caf50;
+  }
+  .todo-item button.edit-btn {
+    background-color: #ff9800;
+  }
+  .todo-item button.delete-btn {
+    background-color: #f44336;
+  }
+  .todo-item button.complete-btn:hover {
+    background-color: #45a049;
+  }
+  .todo-item button.edit-btn:hover {
+    background-color: #e68900;
+  }
+  .todo-item button.delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
