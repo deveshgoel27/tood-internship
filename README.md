@@ -1,12 +1,54 @@
-# React + Vite
+# 📝 My Todo List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and stylish **React Todo App** where you can **add, edit, complete, and delete tasks**.  
+It also saves your todos in **LocalStorage** so they stay even after refreshing the page.  
+The layout features an **image on the left** and the todo list on the right.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- ➕ **Add Tasks** quickly with a button or `Enter` key  
+- ✅ **Mark Tasks as Completed**  
+- ✏️ **Edit Tasks** in-place  
+- 🗑️ **Delete Tasks**  
+- 💾 **LocalStorage Support** – your data stays even after reload  
+- 🎨 **Clean Two-Column Layout** (Image on left, Todo list on right)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- **React.js** (Vite or CRA)
+- **JavaScript (ES6+)**
+- **CSS3** for styling
+- **LocalStorage API**
+
+---
+
+## 📦 Installation
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+
+2. Go to the project folder
+
+ -> cd your-repo-name
+ 
+3.Install dependencies
+  npm install
+  
+4.Start the development server
+npm run dev   # For Vite
+# or
+npm start     # For CRA
+
+
+FOLDER STRUCTURE 
+
+src/
+│── assets/           # Images & icons
+│── components/       # ToDo, ToDoItem components
+│── App.jsx           # Main App layout
+│── styles.css        # Styles for layout
+│── main.jsx          # Entry point
+
